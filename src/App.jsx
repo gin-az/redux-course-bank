@@ -23,9 +23,13 @@ function App() {
             <button onClick={() => getCash(Number(prompt()))}>Снять со счета</button>
         </div>
         <div className="display-info">
-            <div className="display-info-balance"><h3>{cash} RUB</h3></div>
-            <div className="display-info-balance"><h3>$ {cash / 67}</h3></div>
-            <div className="display-info-balance"><h3>E {cash / 83}</h3></div>
+            <div className="display-info-balance">
+                <h2 style={{margin: 2}}>Баланс:</h2>
+                <h4 style={{margin: 2}}>{cash} RUB</h4>
+                <p style={{margin: 2}}>$ {cash / 67}</p>
+                <p style={{margin: 2}}>E {cash / 83}</p>
+            </div>
+            <hr />
         </div>
     </div>
   );
